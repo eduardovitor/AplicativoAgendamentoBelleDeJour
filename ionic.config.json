@@ -1,0 +1,7 @@
+{
+  "name": "app-agendamento",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

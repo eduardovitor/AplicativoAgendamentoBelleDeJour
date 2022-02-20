@@ -1,0 +1,48 @@
+
+<ion-content class="ion-padding ion-justify-content-center">
+  <form [formGroup]="cadastroForm">
+    <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Nome: </ion-label>
+    <br>
+    <br>
+    <ion-input inputmode="text" formControlName="nome" type="text" style="border-style: solid;"></ion-input>
+    <br>
+    <br>
+    <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Endereço: </ion-label>
+    <br>
+    <br>
+    <ion-input inputmode="text" formControlName="endereco" type="text" style="border-style: solid;"></ion-input>
+    <br>
+    <br>
+    <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Email: </ion-label>
+    <br>
+    <br>
+    <ion-input inputmode="email" formControlName="email" ngModel email="true"  type="email" style="border-style: solid;"></ion-input>
+    <br>
+    <br>
+    <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Senha: </ion-label>
+    <br>
+    <br>
+    <ion-input inputmode="password" formControlName="senha" type="password" style="border-style: solid;"></ion-input>
+    <br>
+    <br>
+    <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Confirmação de senha: </ion-label>
+    <br>
+    <br>
+    <ion-input inputmode="password" formControlName="confirmacao_senha" type="password" style="border-style: solid;"></ion-input>
+    <br>
+    <br>
+    <ion-button [disabled]="!cadastroForm.valid" color="primary" (click)="cadastrar($event)" expand="block" type="submit" slot="start" shape="round">
+      <ion-text color="light">
+        Cadastrar
+      </ion-text>
+    </ion-button>
+    <br>
+    <br>
+    <div *ngIf="mostrarAviso">
+      <ion-label color="danger">
+        As senhas não batem
+      </ion-label>
+    </div>
+</form>
+    
+</ion-content>

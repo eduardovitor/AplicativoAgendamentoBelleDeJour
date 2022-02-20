@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-text color="light">
+        <h1 style="font-family:cursive; margin-left: 85px;"> Belle de Jour </h1>
+      </ion-text>
+    </ion-title>
+      <ion-button (click)="calendarioAgendamento()" slot="end" color="light">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding">
+  <div *ngIf="mostrarAgendamentoHora">
+    <ion-text>
+      <h2> Escolha o horário : </h2>
+    </ion-text>
+    <ion-item>
+        <ion-datetime display-format="HH:mm" picker-format="HH:mm" [(ngModel)]="myDate" value="1990-02-19T07:43Z" hour-values=[8,9,10,11,12,13,14,15,16,17,18] display-timezone="utc" doneText="Concluir" cancelText="Cancelar" minuteValues="0,15,30,45" (ionChange)="finalizarAgendamento()"></ion-datetime>
+    </ion-item>
+  </div>
+</ion-content>

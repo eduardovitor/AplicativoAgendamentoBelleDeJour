@@ -1,0 +1,7 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-agendamento",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"linuxAndroidStudioPath": "/snap/android-studio/114/android-studio/bin/studio.sh"
+}

@@ -1,0 +1,34 @@
+
+<ion-content class="ion-padding ion-justify-content-center">
+  <br>
+  <br>
+  <br>
+  <br>
+ <form [formGroup]="loginForm" style="margin-top: 25%;">
+      <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Email: </ion-label>
+      <br>
+      <br>
+      <ion-input type="email" inputmode="email" formControlName="email" ngModel email="true" style="border-style: solid;"></ion-input>
+      <br>
+      <br>
+      <ion-label color="primary" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Senha: </ion-label>
+      <br>
+      <br>
+      <ion-input type="password" inputmode="password" formControlName="senha" style="border-style: solid;"></ion-input>
+      <br>
+      <br>
+      <br>
+      <ion-button color="primary" [disabled]="!loginForm.valid" (click)="fazerLogin($event)" expand="block" type="submit" slot="start" shape="round">
+        <ion-text color="light">
+          Entrar
+        </ion-text>
+      </ion-button>
+  </form>
+  <br>
+  <br>
+  <div *ngIf="erroLogin">
+		<ion-label color="danger">
+			Usuário ou senha incorretos
+		</ion-label>
+	 </div>
+</ion-content>
