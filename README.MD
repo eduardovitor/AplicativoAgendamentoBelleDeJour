@@ -4,24 +4,7 @@
 
 ## 📖 Descrição
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="iniciandoapp-BelleDeJour.gif" alt=""/><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="agendamento.gif" alt=""/><br>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="cadastro.gif" alt=""/><br>
-      </a>
-    </td>
-</table>
+![Tela do app](iniciandoapp-BelleDeJour.gif)
 
 Esse projeto se refere a um MVP de aplicativo de agendamento de clientes feito para a empresa Belle de Jour (uma empresa de brozeamento artificial de mulheres). As clientes costumam agendar um horário para ir à empresa se bronzear. Logo identifiquei que um possível aplicativo  tornaria esse processo mais fácil e prático para as clientes e para a empresária. 
 
